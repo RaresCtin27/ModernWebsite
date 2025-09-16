@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Arial',sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+header{
+    background-color: #333;
+    padding: 1rem 0;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    width: 100%;
+
+
+}
+
+a{
+    color: blue;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+    padding:0.20px ;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li{
+    margin:0 15px;
+}
+
+.nav-list li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+
+}
+
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+    .menu-icon{
+        display: block;
+
+    }
+    .nav-list{
+        display: none;
+        flex-direction: row;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .nav-list.show{
+        display: flex;
+    }
+
+    .nav-list li{
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+.nav-list li a:hover , .nav-list li a:active{
+    background-color: #555;
+    border-radius: 5px;
+
+}
+
+.hero{
+    background-color: #333;
+    color: #fff;
+    padding:100px 20px;
+    text-align: center;
+    flex-grow:1;
+}
+
+.hero h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    font-size: 1.1rem;
+}
+
+.content ,.contact{
+    padding: 40px 20px;
+    text-align: center;
+    flex-grow: 1;
+
+}
+
+.content h2, .contact h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+
+.about p{
+    font-size: 1.1rem;
+}
+
+footer{
+    background-color: #333;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    padding: 10px 0px;
+}
+
+footer p{
+    color: #fff;
+}
+
+.contact form{
+    max-width: 600px;
+    margin:0 auto;
+    text-align: left;
+
+}
+
+.contact form label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact form input, .contact form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+
+
+}
+
+.contact form button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+.contact form button:hover{
+    background-color: #555;
+
+}
